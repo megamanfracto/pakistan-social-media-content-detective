@@ -1,0 +1,23 @@
+# secrets: never commit API keys (also clear them from notebook cell 1 before committing)
+.env
+*.key
+
+# real collected comments: keep them out of the repo (platform terms + privacy)
+comments_*.csv
+!comments_template.csv
+data/raw/
+
+# generated files that contain comment text
+outputs/labeled_comments.csv
+outputs/*/labeled_comments.csv
+outputs/gold_*.csv
+outputs/*/gold_*.csv
+gold_labeled.csv
+gold_to_label.csv
+results.zip
+
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
